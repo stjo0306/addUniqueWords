@@ -9,5 +9,5 @@ To run the code use the following command from within the project directory:
 To modify the strings being used for testing the code update the code in `arrays.js` found
   in the root directory of the project.
 
-**Note:** The additional "finalList" is used for testing the result.  If you modify the other arrays
-make sure to modify the "finalList" to what is expected out.
+**Note:** The additional 'finalList' in `arrays.js` is used for testing the result.
+If you modify the other arrays make sure to modify the 'finalList' to what is expected out.
