@@ -8,8 +8,7 @@
     "build:all": "pkg . --out-path dist/",
     "build:windows": "pkg . --out-path dist/ -t node14-win",
     "clean": "rimraf dist/",
-    "start": "node src/index.js",
-    "test": "node src/index.js inArray.json addArray.json"
+    "start": "node src/index.js"
   },
   "author": "john steckelberg",
   "license": "ISC",
