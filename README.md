@@ -2,12 +2,23 @@ This code was put together using
   NodeJS v14.20.0
   npm v6.14.17
 
-To run the code use the following command from within the project directory:
+Running the code in windows
 
-`npm start`
+you can modify the `inArray.json` list of works to update the "starting" array of words
+you can modify the `addArray.json` list of works to update the array of words to be added
 
-To modify the strings being used for testing the code update the code in `arrays.js` found
-  in the root directory of the project.
+or you can add your own `.json` files and call them out when running the program
 
-**Note:** The additional 'finalList' in `arrays.js` is used for testing the result.
-If you modify the other arrays make sure to modify the 'finalList' to what is expected out.
+open command prompt where the program is dropped and run the following command:
+
+`C:\path\to\executable>adduniquewords.exe <origin array file> <add array file>`
+
+Development:
+
+`npm install` to install the packages necessary to develop this program
+`npm start` will run the code natively using node
+`npm run build:windows` will package the project into an executable file under the `dist/` directory
+
+
+**Note:** The additional 'testArray.json' file is used for testing the result.
+If you modify the other arrays make sure to modify the 'testArray.json' to what is expected out.

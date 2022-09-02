@@ -1,14 +1,16 @@
+const fs = require('fs');
 const { checkAndAdd } = require('./checkAndAdd');
-const {
-  toAddTo, // list of words to which we are adding
-  toBeAdded, // list of words to be added
-  finalList, // list to test against
-} = require('../arrays');
+const toAddToFile = process.argv[2]; // list of words to which we are adding
+const toBeAddedFile = process.argv[3];
+const toAddTo = JSON.parse(fs.readFileSync(toAddToFile).toString());
+const toBeAdded = JSON.parse(fs.readFileSync(toBeAddedFile).toString());
+const finalList = JSON.parse(fs.readFileSync('testArray.json').toString());
 
-const list = [...toAddTo];
+const list = toAddTo;
 
-console.log('words to add:', toBeAdded);
 console.log('original list:', list, '\n');
+console.log('words to add:', toBeAdded);
+
 toBeAdded.forEach((word) => {
   console.log('add [', word, '] to the list');
   if (!checkAndAdd(list, word)) {

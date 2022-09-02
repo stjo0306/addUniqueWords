@@ -1,12 +1,20 @@
 {
-  "name": "findoraddword",
+  "name": "adduniqueword",
   "version": "1.0.0",
   "description": "Write a method that takes in 2 parameters, a list of words and a search word. The method should determine whether or not the search word exists in the list. If the word is not found the list, add the word into the list and check that the list now contains the word.",
   "main": "src/index.js",
+  "bin": "src/index.js",
   "scripts": {
-    "start": "node src/index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:all": "pkg . --out-path dist/",
+    "build:windows": "pkg . --out-path dist/ -t node14-win",
+    "clean": "rimraf dist/",
+    "start": "node src/index.js",
+    "test": "node src/index.js inArray.json addArray.json"
   },
   "author": "john steckelberg",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "pkg": "^5.8.0",
+    "rimraf": "^3.0.2"
+  }
 }
