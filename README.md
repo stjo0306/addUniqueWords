@@ -4,11 +4,6 @@ This code was put together using
 
 Running the code in windows
 
-you can modify the `inArray.json` list of works to update the "starting" array of words
-you can modify the `addArray.json` list of works to update the array of words to be added
-
-open command prompt where the program is dropped and run the following command:
-
 `C:\path\to\executable>adduniquewords.exe`
 
 Development:
